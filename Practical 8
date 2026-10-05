@@ -1,0 +1,173 @@
+def factorial(n):
+
+    if n == 0:
+        return 1
+
+    return n * factorial(n - 1)
+
+num = int(input("Enter number: "))
+
+print("Factorial:", factorial(num))
+
+
+
+
+
+
+
+class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+root = Node(10)
+
+root.left = Node(20)
+root.right = Node(30)
+
+print("Root:", root.data)
+print("Left:", root.left.data)
+print("Right:", root.right.data)
+
+
+
+
+
+
+
+def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+def inorder(root):
+    
+
+    if root:
+
+        inorder(root.left)
+
+        print(root.data)
+
+        inorder(root.right)
+
+root = Node(10)
+root.left = Node(20)
+root.right = Node(30)
+
+inorder(root)
+
+
+
+
+
+
+
+student = {
+    "RollNo": 101,
+    "Name": "Rahul",
+    "Marks": 85
+}
+
+print("Roll No:", student["RollNo"])
+print("Name:", student["Name"])
+print("Marks:", student["Marks"])
+
+
+
+
+
+
+numbers = [10, 20, 10, 30, 20, 10]
+
+frequency = {}
+
+for number in numbers:
+
+    if number in frequency:
+        frequency[number] += 1
+    else:
+        frequency[number] = 1
+
+print(frequency)
+
+
+
+
+
+text = "python data science python data"
+
+words = text.split()
+
+frequency = {}
+
+for word in words:
+
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+
+print(frequency)
+
+
+
+
+A = {10, 20, 30, 40}
+B = {30, 40, 50, 60}
+
+print("Union:", A | B)
+print("Intersection:", A & B)
+print("Difference:", A - B)
+
+
+
+
+
+class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+stack = None
+
+# Push 10
+new_node = Node(10)
+new_node.next = stack
+stack = new_node
+
+# Push 20
+new_node = Node(20)
+new_node.next = stack
+stack = new_node
+
+# Display
+current = stack
+
+while current:
+    print(current.data)
+    current = current.next
+
+
+
+
+
+from collections import deque
+
+queue = deque()
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+print("Queue:", queue)
+
+queue.popleft()
+
+print("After deletion:", queue)
+OUTPUT-:
+Queue: deque([10, 20, 30])
+After deletion: deque([20, 30])
