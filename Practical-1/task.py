@@ -9,4 +9,3 @@ element = int(input("Enter element to insert: "))
 arr.insert(position- 1, element)
 print("Array after insertion:")
 print(arr)
-
